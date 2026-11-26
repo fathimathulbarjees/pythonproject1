@@ -7,6 +7,13 @@ from database import users_collection
 from .models import User, LoginUser
 
 
+def home(request):
+    return JsonResponse({
+        "status": "success",
+        "message": "Sport Project API Running Successfully"
+    })
+
+
 @csrf_exempt
 def register(request):
 
